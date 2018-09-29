@@ -1,0 +1,46 @@
+.content{
+    margin-top: 50px;
+    max-width: 80%;
+}
+
+.middle-canvas{
+    border: 1px solid #cbcbcb;
+    width: 100%;
+    height: 300px ;
+    background-color: #fcfcfc;
+    box-shadow: 0 0 2px 0 rgba(0,0,0,0.3);
+}
+
+#myForm{
+    margin-top: 40px;
+}
+
+#textField{
+    width:350px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#btnField{
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+#btnSend{
+    border: 1px solid red;
+    border-radius: 3px;
+    color:red;
+    width:120px;
+
+}
+
+#btnClear{
+    border: 1px solid #cbcbcb;
+    border-radius: 3px;
+    color:#cbcbcb;
+    width:120px;
+}
+
