@@ -39,7 +39,7 @@ $(document).ready(function () {
 
         var textObj = {
             timeIndex: t,
-            x: canvasWidth,
+            x: screen.availWidth,
             y: y,
             speed: speed,
             color: color,
@@ -66,7 +66,7 @@ $(document).ready(function () {
             var width = cxt.measureText('Hello').width;
             var speed = Math.floor(Math.random() * 3)+2;
 
-            var x = canvasWidth;
+            var x = screen.availWidth;
             var y = Math.floor(Math.random() * (300-size+1));
 
             var textObj = {
@@ -103,6 +103,9 @@ $(document).ready(function () {
         canvasHeight = myCanvas.height();
         myCanvas[0].height = canvasHeight;
         myCanvas[0].width = canvasWidth;
+
+        cxt.textBaseline = 'top';
+        cxt.strokeStyle = '#000';
 
         drawText();
     };
