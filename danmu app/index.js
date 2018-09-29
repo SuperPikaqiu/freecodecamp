@@ -96,7 +96,16 @@ $(document).ready(function () {
             sendText();
             return false;
         }
-    }
+    };
+
+    window.onresize = function(){
+        canvasWidth = myCanvas.width();
+        canvasHeight = myCanvas.height();
+        myCanvas[0].height = canvasHeight;
+        myCanvas[0].width = canvasWidth;
+
+        drawText();
+    };
 
     window.setInterval(function () {
         timeSpan += 1;
