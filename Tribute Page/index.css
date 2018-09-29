@@ -1,0 +1,15 @@
+body{
+    margin-top:60px;
+}
+
+.main-img{
+
+    width:80%;
+    margin-left:10%;
+}
+
+.desc{
+    margin-top:20px;
+    text-align:left;
+    font-size:20px;
+}
