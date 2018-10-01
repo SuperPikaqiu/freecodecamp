@@ -1,0 +1,38 @@
+body{
+    background-color: #e3599f;
+}
+
+.quote-box{
+    margin-top: 150px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    border-radius: 4px;
+    background-color: #ffffff;
+}
+
+.quote-text{
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.quote-author{
+    font-size: 16px;
+    text-align: right;
+    margin-bottom: 25px;
+}
+
+#btnNewQuote{
+    float: right;
+    color:#fff;
+}
+
+#tweetLink{
+    color:#fff;
+}
+
+#tumblrLink{
+    color:#fff;
+}
