@@ -27,15 +27,16 @@ app.controller('myCtrl',function ($scope) {
                     $scope.data.travel_index = data.result.today.travel_index;
                     $scope.data.exercise_index = data.result.today.exercise_index;
 
-
-                    $scope.futureData = [];
-                    let count = 0;
-                    for(let key of Object.keys(data.result.future)){
-                        $scope.futureData[count++] = data.result.future[key];
-                        if(count>=6){
-                            break;
-                        }
-                    }
+                    $scope.futureData = data.result.future;
+                    delete $scope.futureData[Object.keys($scope.futureData)[0]];
+                    // $scope.futureData = [];
+                    // let count = 0;
+                    // for(let key of Object.keys(data.result.future)){
+                    //     $scope.futureData[count++] = data.result.future[key];
+                    //     if(count>=6){
+                    //         break;
+                    //     }
+                    // }
 
                     $scope.$apply();
                 }
