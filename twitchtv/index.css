@@ -1,0 +1,171 @@
+body{
+    background-color: #008bc5;
+}
+
+.main-box{
+    width:400px;
+    margin-top: 50px;
+    background-color: #ffffff;
+    border-radius: 3px;
+}
+
+.box-header{
+    color:#fff;
+    font-size: 20px;
+}
+
+.box-content{
+
+}
+
+.search-field{
+    padding: 20px;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.list-field{
+    overflow-y: auto;
+    height: 600px;
+    padding: 15px 0px;
+}
+
+.list-field::-webkit-scrollbar{
+    display: none;
+}
+
+
+.box-header ul{
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    justify-content: space-around;
+}
+
+.box-header ul li{
+    display: inline-block;
+    width: 40%;
+    font-size: 20px;
+    text-align: center;
+    background-color: #ff8d00;
+    border-right: 1px solid #fff;
+    cursor: pointer;
+}
+
+.box-header ul li:last-child{
+    border-right: 0;
+}
+
+.box-header ul li:hover{
+    background-color: #d77500 !important;
+}
+
+.box-header ul li a{
+    display: inline-block;
+    line-height: 40px;
+    height: 40px;
+    text-decoration: none;
+    color:#fff;
+}
+
+.select{
+    background-color: #3043d7 !important;
+}
+
+.input-box{
+    width: 300px;
+    position: relative;
+    border: 2px solid #b68228;
+    border-radius: 30px;
+    padding: 2px 36px 2px 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.input-box input{
+    display: block;
+    width: 100%;
+    height: 32px;
+    padding: 0;
+    outline: none;
+    border: 0;
+    background: 0;
+    color: #323232;
+    font-size: 16px;
+    line-height: 32px;
+}
+
+.input-box i{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    color: #d3d3d3;
+}
+
+.list-field ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+
+.list-field ul li{
+    display:flex;
+    width: 100%;
+    height: 80px;
+    margin: 5px 0;
+    justify-content: space-between;
+}
+
+
+.info-img{
+    display: inline-block;
+    width: 20%;
+    padding: 8px;
+}
+
+.logo{
+    border-radius: 50%;
+}
+
+.info-content{
+    display: inline-block;
+    height: 100%;
+    width: 60%;
+    overflow: hidden;
+    padding-top: 20px;
+    text-overflow: ellipsis;
+}
+
+.info-content a{
+    display: inline-block;
+    margin-bottom: 5px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #ffb122;
+}
+
+.info-content span{
+    font-size: 12px;
+    color: #d6d6d6;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-style: italic;
+}
+
+.info-status{
+    display: inline-block;
+    padding-top: 20px;
+    padding-left: 25px;
+    width: 20%;
+}
+
+.online-green{
+    font-size: 20px;
+    color: #00ff1f;
+}
+
+.offline-gray{
+    color: #cfcfcf;
+    font-size: 20px;
+}

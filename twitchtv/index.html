@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Twitchtv</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body ng-app="myApp">
+<div class="container" ng-controller="myCtrl">
+    <div class="main-box center-block">
+        <div class="box-header">
+            <ul>
+                <li id="tagAll" class="select"><a href="#">All</a></li>
+                <li id="tagOnline"><a href="#">Online</a></li>
+                <li id="tagOffline"><a href="#">Offline</a></li>
+            </ul>
+        </div>
+        <div class="box-content">
+            <div class="search-field">
+                <div class="input-box">
+                    <i class="fa fa-search"></i>
+                    <input type="text" id="txtChannel" ng-change="search()" ng-model="strChannel">
+                </div>
+            </div>
+            <div class="list-field">
+                <ul>
+                    <li ng-repeat="info in infoList" ng-show="info.show">
+                        <div class="info-img">
+                            <img class="img-responsive logo " src="{{info.logo}}">
+                        </div>
+
+                        <div class="info-content">
+                            <a href="{{info.url}}" target="_blank">{{info.title}}</a>
+                            <span>{{info.desc}}</span>
+                        </div>
+                        <div class="info-status">
+                            <i class="fa fa-check online-green" ng-show="info.onlineFlag"></i>
+                            <i class="fa fa-check offline-gray" ng-hide="info.onlineFlag"></i>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+</div>
+
+<script src="../node_modules/jquery/dist/jquery.min.js"></script>
+<script src="../node_modules/angular/angular.min.js"></script>
+<script src="index.js"></script>
+
+</body>
+</html>
