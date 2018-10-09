@@ -2,7 +2,7 @@ var app = angular.module('myApp',[]);
 
 app.controller('myCtrl',function ($scope) {
     $scope.getWeather = function () {
-        var api = 'http://v.juhe.cn/weather/index';
+        var api = 'https://v.juhe.cn/weather/index';
         var appKey = '783de8d7fddd4e67d0adc31ba5252fc1';
         var cityName = encodeURI('深圳');
         var url = api+'?cityname='+cityName+'&key='+appKey;

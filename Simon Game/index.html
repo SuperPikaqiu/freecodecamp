@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simon Game</title>
+
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-switch/dist/css/bootstrap3/bootstrap-switch.min.css">
+    <link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myDialogLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <h1>You Win!</h1>
+                <button type="button" class="btn btn-default" id="btnClose">Close</button>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="box">
+    <div id="colorBtn1" class="colorBtn" data-index="1"></div>
+    <div id="colorBtn2" class="colorBtn" data-index="2"></div>
+    <div id="colorBtn3" class="colorBtn" data-index="3"></div>
+    <div id="colorBtn4" class="colorBtn" data-index="4"></div>
+    <div class="btnBox">
+        <h2>Simon<span>&reg;</span></h2>
+        <div class="middle">
+            <div class="countGroup">
+                <div id="countPanel">- -</div>
+                <span>COUNT</span>
+            </div>
+            <div class="startGroup">
+                <button type="button" id="btnStart"></button>
+                <span>START</span>
+            </div>
+            <div class="strictGroup">
+                <div id="strictIcon"></div>
+                <button type="button" id="btnStrict"></button>
+                <span>STRICT</span>
+            </div>
+        </div>
+        <div class="switchGroup">
+            <input type="checkbox" id="btnSwitch">
+        </div>
+    </div>
+</div>
+<audio id="sound1">
+    <source src="https://www.freecodecamp.cn/images/simonSound1.mp3" type="audio/mpeg">
+</audio>
+<audio id="sound2">
+    <source src="https://www.freecodecamp.cn/images/simonSound2.mp3" type="audio/mpeg">
+</audio>
+<audio id="sound3">
+    <source src="https://www.freecodecamp.cn/images/simonSound3.mp3" type="audio/mpeg">
+</audio>
+<audio id="sound4">
+    <source src="https://www.freecodecamp.cn/images/simonSound4.mp3" type="audio/mpeg">
+</audio>
+
+<script src="../node_modules/jquery/dist/jquery.min.js"></script>
+<script src="../node_modules/jqueryui/jquery-ui.min.js"></script>
+<script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="../node_modules/bootstrap-switch/dist/js/bootstrap-switch.min.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
