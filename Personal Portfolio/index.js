@@ -37,6 +37,58 @@ $(document).ready(function () {
         }
     };
 
+    function setGrid(){
+        var h = $('.grid li').width() * 0.6;
+        $('.grid li').height(h);
+
+        var titleH = $('.grid span').height();
+        $('.grid span').css('lineHeight',`${titleH}px`);
+    }
+
+    setGrid();
+
+    $('.frame-box').on('load',function () {
+        var w = window.screen.availWidth;
+        var h = window.screen.availHeight;
+
+        var pw = $(this).parent().width();
+
+
+        var scale = pw * 2 / w;
+
+        var sw = Math.ceil(w * scale);
+        var sh = Math.ceil(h * scale);
+
+        var top = Math.ceil((h - sh)/2);
+        var left = Math.ceil((w - pw)/2);
+
+
+
+        $(this).css({
+            'width':w+'px',
+            'height':h+'px',
+            'transform':`scale(${scale})`,
+            'top':`-${top}px`,
+            'left':`-${left}px`,
+            'display':'block'
+        });
+    })
+
+    // $('#frameTest').load(function () {
+    //     var w = this.contentDocument.body.scrollWidth;
+    //     var h = this.contentDocument.body.scrollHeight;
+    //
+    //     var pw = $(this).parent().css('width');
+    //     var ph = pw * 0.6;
+    //     $(this).parent().css('height',ph);
+    //     $(this.contentDocument.body).find('#result').attr('scrolling','no');
+    //     $(this).width(w);
+    //     $(this).height(h);
+    //
+    //     var scale = pw / w;
+    //     $(this).css('transform',`scaleX(${scale})`);
+    // })
+
 });
 
 
