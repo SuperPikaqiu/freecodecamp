@@ -1,0 +1,32 @@
+{
+  "name": "freecodecamp-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "angular": "^1.7.4",
+    "angular-sanitize": "^1.7.4",
+    "bootstrap": "^4.1.3",
+    "bootstrap-switch": "^3.3.4",
+    "css-loader": "^1.0.0",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.3.1",
+    "jqueryui": "^1.11.1",
+    "popper.js": "^1.14.4",
+    "requirejs": "^2.3.6",
+    "webpack": "^4.20.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "eslint": "^5.7.0",
+    "eslint-plugin-react": "^7.11.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "eslint-create": "eslint --init",
+    "eslint": "eslint project",
+    "babel":"babel project/tic-tac-toe/index.js -o index-babel.js"
+  },
+  "author": "superpikaqiu",
+  "license": "ISC"
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
+
+
+</head>
+<body>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myDialogLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="choicePanel">
+                    <h2>tictactoe.js</h2>
+                    <hr>
+                    <span>X XOR O?</span>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" id="btnX" class="btn btn-default">X</button>
+                <button type="button" id="btnO" class="btn btn-default">O</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="box">
+    <ul>
+        <li id="0" class="right-bottom"></li>
+        <li id="1" class="right-bottom"></li>
+        <li id="2" class="bottom"></li>
+        <li id="3" class="right-bottom"></li>
+        <li id="4" class="right-bottom"></li>
+        <li id="5" class="bottom"></li>
+        <li id="6" class="right"></li>
+        <li id="7" class="right"></li>
+        <li id="8"></li>
+    </ul>
+    <canvas id="winCanvas" width="500" height="500"></canvas>
+</div>
+<button type="button" class="btn btn-default" id="roleSelect" data-toggle="modal" data-target="#myModal">重新选择角色</button>
+
+
+
+<script data-main="index.js" src="../../node_modules/requirejs/require.js"></script>
+</body>
+</html>
