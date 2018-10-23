@@ -1,3 +1,5 @@
+'use strict';
+
 $(document).ready(function () {
     var newFlag = true;
 
@@ -12,7 +14,7 @@ $(document).ready(function () {
                 exp = '';
                 break;
             case 'Del':
-                if(!newFlag){
+                if (!newFlag) {
                     exp = exp.slice(0, exp.length - 1);
                 }
 
@@ -21,16 +23,14 @@ $(document).ready(function () {
                 try {
                     exp = eval(exp);
                     newFlag = true;
-                }
-                catch (e) {
+                } catch (e) {
                     console.log(e);
                 }
                 break;
             default:
                 if (newFlag) {
                     exp = value;
-                }
-                else {
+                } else {
                     exp += value;
                 }
 
@@ -38,8 +38,6 @@ $(document).ready(function () {
 
                 break;
         }
-
-
 
         input.val(exp);
     });

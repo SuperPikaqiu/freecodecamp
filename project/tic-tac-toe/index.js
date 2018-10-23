@@ -2,7 +2,7 @@ require.config({
     baseUrl:"../../node_modules",
     paths:{
         "jquery":["jquery/dist/jquery.min"],
-        "bootstrap":["bootstrap/dist/js/bootstrap.bundle.min"],
+        "bootstrap":["bootstrap/dist/js/bootstrap.min"],
         "popper.js":["popper.js/dist/umd/popper"]
     },
     shim:{

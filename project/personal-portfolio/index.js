@@ -74,6 +74,8 @@ $(document).ready(function () {
         });
     });
 
+    console.log("test");
+
     // $('#frameTest').load(function () {
     //     var w = this.contentDocument.body.scrollWidth;
     //     var h = this.contentDocument.body.scrollHeight;
