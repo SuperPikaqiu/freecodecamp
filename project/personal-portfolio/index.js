@@ -1,3 +1,10 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'font-awesome/css/font-awesome.min.css';
+import './index.scss';
+
+import 'jquery/dist/jquery.min';
+import 'bootstrap/dist/js/bootstrap.min';
+
 $(document).ready(function () {
     $('#navAbout').click(function () {
         var top = $('#about').offset().top - 50;

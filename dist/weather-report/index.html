@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!--<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />-->
+    <title>Weather Report</title>
+    <!-- <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css"> -->
+
+</head>
+<body ng-app="myApp">
+<div class="container" ng-controller="myCtrl">
+    <header>
+        <a href="https://www.juhe.cn" id="outLink"><img src="https://www.juhe.cn/themes/v5/public/images/loginlogo.png"
+                                                        class="img-responsive"></a>
+        <h1>天气应用</h1>
+    </header>
+    <section>
+        <div id="todayWeather">
+            <div class="left-content">
+                <div class="center-block">
+                    <h3>{{data.temp}} &#176;C</h3>
+                    <p>{{data.city}} 多云</p>
+                    <p>空气湿度：{{data.humidity}}</p>
+                </div>
+
+            </div>
+            <div class="right-content">
+                <p>温度:{{data.temperature}}</p>
+                <p>穿衣指数:{{data.dressing_index}}</p>
+                <p>穿衣建议:{{data.dressing_advice}}</p>
+                <p>紫外线强度:{{data.uv_index}}</p>
+                <p>舒适度指数:{{data.comfort_index}}</p>
+                <p>洗车指数:{{data.wash_index}}</p>
+                <p>旅游指数:{{data.travel_index}}</p>
+                <p>晨练指数:{{data.exercise_index}}</p>
+
+            </div>
+        </div>
+        <div id="futureWeather">
+            <h2 class="text-center">未来6天天气</h2>
+            <ul>
+                <li ng-repeat="item in futureData">
+                    <div class="center-block">
+                        <p>{{item.week+' '+item.date}}</p>
+                        <p>{{item.temperature+' '+item.weather}}</p>
+                        <p>{{item.wind}}</p>
+                    </div>
+
+                </li>
+
+            </ul>
+        </div>
+    </section>
+</div>
+
+
+<!-- <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+<script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="../../node_modules/angular/angular.min.js"></script>
+<script src="index.js"></script> -->
+<script type="text/javascript" src="vendors.bundle.js"></script><script type="text/javascript" src="weather-report.bundle.js"></script></body>
+</html>

@@ -1,3 +1,9 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'font-awesome/css/font-awesome.min.css';
+import './index.scss';
+
+import 'jquery/dist/jquery.min';
+
 $(document).ready(function () {
     var newFlag = true;
 
@@ -44,5 +50,5 @@ $(document).ready(function () {
         input.val(exp);
     });
 
-    console.log("test");
+    console.log("test3");
 });

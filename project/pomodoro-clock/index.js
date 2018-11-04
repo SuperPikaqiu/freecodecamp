@@ -1,3 +1,8 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './index.scss';
+
+import 'jquery/dist/jquery.min';
+
 $(document).ready(function () {
     var data = {
         break: 5,

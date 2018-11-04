@@ -1,3 +1,11 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'font-awesome/css/font-awesome.min.css';
+import './index.scss';
+
+import 'jquery/dist/jquery.min';
+import 'angular/angular.min';
+import 'angular-sanitize/angular-sanitize.min';
+
 var app = angular.module("myApp", ["ngSanitize"]);
 app.controller("myCtrl", function($scope) {
   $("#searchIcon").on("click", function() {

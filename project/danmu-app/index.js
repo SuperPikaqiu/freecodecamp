@@ -1,3 +1,8 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './index.scss';
+
+import 'jquery/dist/jquery.min';
+
 $(document).ready(function () {
     let myCanvas = $('#myCanvas');
     let cxt = myCanvas[0].getContext('2d');

@@ -2,6 +2,7 @@ var gulp = require("gulp");
 var babel = require("gulp-babel");
 var rename = require("gulp-rename");
 var livereload = require("gulp-livereload");
+var sass = require("gulp-sass");
 
 var srcPath = "project/**/*.!(babel.)js";
 var destPath = "";
@@ -16,12 +17,17 @@ function jsChange() {
 
 gulp.task("js", jsChange);
 
-gulp.task("all", function() {});
+gulp.task('style',function(){
+    return gulp.src('project/**/*.scss')
+    .pipe(sass())
+    .pipe(gulp.dest('project'));
+});
 
 gulp.task("watch", function() {
     livereload.listen();
     gulp.watch("project/**/*.js", function(event) {
-        srcPath = event.path;
+        srcPath = event.path;//src的路径形如D:\Project\...
+        
         let reg = /.*\.babel/;
         if (reg.test(srcPath)) {
             return;
@@ -30,6 +36,9 @@ gulp.task("watch", function() {
 
         jsChange();
     });
+
+    gulp.watch('project/**/*.scss',['style']);
+
     gulp.watch([
         "project/**/*.babel.js",
         "project/**/*.css",

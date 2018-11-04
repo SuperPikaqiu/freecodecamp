@@ -1,3 +1,10 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './index.scss';
+
+import 'jquery/dist/jquery.min';
+import 'bootstrap/dist/js/bootstrap.min';
+import 'angular/angular.min';
+
 var app = angular.module("myApp", []);
 
 app.controller("myCtrl", function($scope) {
